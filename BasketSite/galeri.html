@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+ <header>
+    <div class="logo">
+      <img src="images/cd_logo.png" alt="Logo">
+    </div>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="vizyon.html">Vizyon</a></li>
+        <li><a href="misyon.html">Misyon</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="haber.html">Haberler</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SLIDER -->
+  <div class="slider">
+    
+    <div class="slide active" style="background-image: url('images/image7.jpeg');padding-top: 160px;"></div>
+    <div class="slide" style="background-image: url('images/image5.jpeg');"></div>
+    <div class="slide" style="background-image: url('images/image2.jpeg');padding-top: 160px;"></div>
+
+
+    <!-- Ok butonları -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <!-- Noktalar -->
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!-- GALERİ KISMI -->
+ <section class="content">
+  <h1>Galeri</h1>
+  <div class="gallery">
+    <img src="images/image2.jpeg" alt="Fotoğraf 1" onclick="openLightbox(this)">
+    <img src="images/image4.jpeg" alt="Fotoğraf 2" onclick="openLightbox(this)">
+    <img src="images/image3.jpeg" alt="Fotoğraf 3" onclick="openLightbox(this)">
+    <img src="images/image5.jpeg" alt="Fotoğraf 3" onclick="openLightbox(this)">
+    <img src="images/image7.jpeg" alt="Fotoğraf 3" onclick="openLightbox(this)">
+    <img src="images/image6.jpeg" alt="Fotoğraf 3" onclick="openLightbox(this)">
+    
+    <!-- Video da ekleyelim -->
+    <video width="300" height="200" controls onclick="openLightbox(this)"class="rotate">
+      <source src="images/video1.mp4" type="video/mp4">
+    </video>
+    <video width="300" height="200" controls onclick="openLightbox(this)"class="rotate">
+      <source src="images/video2.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <div id="lightbox-content"></div>
+</div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <!-- Sol -->
+      <div class="footer-col">
+        <h3>Takımımız</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vizyon ve misyonumuz doğrultusunda ilerliyoruz.
+        </p>
+      </div>
+
+      <!-- Orta -->
+      <div class="footer-col">
+        <h3>Menü</h3>
+        <ul>
+          <li><a href="#">Vizyon</a></li>
+          <li><a href="#">Misyon</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Haberler</a></li>
+        </ul>
+      </div>
+
+      <!-- Sağ -->
+      <div class="footer-col">
+        <h3>Bizi Takip Edin</h3>
+        <div class="social-icons">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Şirket Adı. Tüm Hakları Saklıdır.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
